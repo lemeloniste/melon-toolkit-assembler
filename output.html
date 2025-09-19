@@ -1,0 +1,23 @@
+
+    <html>
+      <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+      </head>
+      <body>
+        <div id="root"></div>
+        <script type="text/babel">
+          
+
+          const App = () => {
+            const component = React.createElement(null, {}, React.createElement(Main Viewer, {"viewPath":"MainViewerPanelComponent.js"}), React.createElement(Sidebar, {}, React.createElement(Add Entity Form, {}, React.createElement(TextFieldComponent, {"label":"Entity Name","viewPath":"TextFieldComponent.js"})), React.createElement(Search & Load, {}, React.createElement(TextFieldComponent, {"label":"Search by Tag or Name","viewPath":"TextFieldComponent.js"}))));
+            return component;
+          };
+
+          const root = ReactDOM.createRoot(document.getElementById('root'));
+          root.render(React.createElement(App));
+        </script>
+      </body>
+    </html>
+  
